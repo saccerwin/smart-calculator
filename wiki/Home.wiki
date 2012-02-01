@@ -8,7 +8,7 @@
 
 
  * Giao diện chính hệ thống có 1 chức năng chính “Calculator” và 3 chức năng phụ thể hiện dưới dạng menu đó là: Option, About,Help.
- # Chức năng Calculator chính có chức năng như một máy tính cầm tay cơ bản cộng, trừ, nhân, chia, có các dấu ngoặc đơn, dấu phảy, dấu xóa,dấu bằng.
- # Chức năng advance: là một máy tính cao cấp có thực hiện các phép toán học: sin, cos,  tang,cotang, căn bậc 2, căn bậc 3,log,ln, giải phương trình bậc 2, hệ phương trình 2 ẩn, hệ phương trình 3 ẩn, vẽ đồ thì hàm số bậc nhất, bậc 2, bậc 3.
- # About: Giới thiệu về bản quyền, thông tin về các thành viên trong nhóm như họ và tên, ngày tháng năm sinh, sinh viên trường nào, ảnh từng thành viên… Và có link dẫn tới trang web của nhóm hoặc trang web của NIIT ITC.
- # Help: Giới thiệu về cách sử dụng phần mềm.
+   # Chức năng Calculator chính có chức năng như một máy tính cầm tay cơ bản cộng, trừ, nhân, chia, có các dấu ngoặc đơn, dấu phảy, dấu xóa,dấu bằng.
+   # Chức năng advance: là một máy tính cao cấp có thực hiện các phép toán học: sin, cos,  tang,cotang, căn bậc 2, căn bậc 3,log,ln, giải phương trình bậc 2, hệ phương trình 2 ẩn, hệ phương trình 3 ẩn, vẽ đồ thì hàm số bậc nhất, bậc 2, bậc 3.
+   # About: Giới thiệu về bản quyền, thông tin về các thành viên trong nhóm như họ và tên, ngày tháng năm sinh, sinh viên trường nào, ảnh từng thành viên… Và có link dẫn tới trang web của nhóm hoặc trang web của NIIT ITC.
+   # Help: Giới thiệu về cách sử dụng phần mềm.
