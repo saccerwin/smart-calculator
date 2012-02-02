@@ -12,3 +12,14 @@
    # Chức năng advance: là một máy tính cao cấp có thực hiện các phép toán học: sin, cos,  tang,cotang, căn bậc 2, căn bậc 3,log,ln, giải phương trình bậc 2, hệ phương trình 2 ẩn, hệ phương trình 3 ẩn, vẽ đồ thì hàm số bậc nhất, bậc 2, bậc 3.
    # About: Giới thiệu về bản quyền, thông tin về các thành viên trong nhóm như họ và tên, ngày tháng năm sinh, sinh viên trường nào, ảnh từng thành viên… Và có link dẫn tới trang web của nhóm hoặc trang web của NIIT ITC.
    # Help: Giới thiệu về cách sử dụng phần mềm.
+
+==Thiết kế chương trình==
+===Giao diện===
+ * Thiết kế dạng nằm ngang (landscape)
+ * Chia thành các layout như sau:
+    # Layout tính toán: gồm các chức năng máy tính cơ bản và nâng cao.
+    # Layout giải phương trình
+    # Layout vẽ đồ thị hàm số
+    # Layout vẽ biểu đồ
+    # Layout convert
+===Chức năng===
