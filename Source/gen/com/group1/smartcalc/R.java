@@ -18,7 +18,7 @@ public final class R {
         public static final int about=0x7f060002;
         public static final int help=0x7f060003;
         public static final int imgAbout=0x7f060000;
-        public static final int txtAbout=0x7f060001;
+        public static final int shjsi=0x7f060001;
     }
     public static final class layout {
         public static final int aboutus=0x7f030000;
@@ -30,6 +30,22 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f040001;
+        public static final int copyright=0x7f040002;
+        public static final int cuong_name=0x7f040006;
+        public static final int cuong_school=0x7f040007;
+        public static final int cuong_telephone=0x7f040008;
+        public static final int dieu_name=0x7f040009;
+        public static final int dieu_school=0x7f04000a;
+        public static final int dieu_telephone=0x7f04000b;
+        public static final int duong_name=0x7f040003;
+        public static final int duong_school=0x7f040004;
+        public static final int duong_telephone=0x7f040005;
         public static final int hello=0x7f040000;
+        public static final int long_name=0x7f04000f;
+        public static final int long_school=0x7f040010;
+        public static final int long_telephone=0x7f040011;
+        public static final int vuong_name=0x7f04000c;
+        public static final int vuong_school=0x7f04000d;
+        public static final int vuong_telephone=0x7f04000e;
     }
 }
