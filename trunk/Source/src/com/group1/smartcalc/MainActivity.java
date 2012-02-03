@@ -37,11 +37,11 @@ public class MainActivity extends Activity {
             dialog.setTitle("About us");
             dialog.setCancelable(true);
             
-            ImageView imageView = (ImageView) dialog.findViewById(R.id.imgAbout);
+  /*          ImageView imageView = (ImageView) dialog.findViewById(R.id.imgAbout);
             imageView.setImageResource(R.drawable.ic_launcher);
             
             TextView txtContent = (TextView) dialog.findViewById(R.id.txtAbout);
-            txtContent.setText("About us");
+            txtContent.setText("About us");*/
             dialog.show();
         	return true;
         	
