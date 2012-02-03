@@ -12,25 +12,24 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/copyright" />
-	
+
         <LinearLayout
+            android:id="@+id/imgAbout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/imgAbout" >
+            android:orientation="horizontal" >
 
             <ImageView
-                
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/ic_launcher" />
 
             <LinearLayout
+                android:id="@+id/shjsi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" 
-                android:id="@+id/shjsi">
+                android:orientation="vertical" >
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -41,7 +40,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/duong_school"
+                    android:text="@string/school"
                     android:textColor="#FFFF00" />
 
                 <TextView
@@ -52,8 +51,165 @@
             </LinearLayout>
         </LinearLayout>
 
-    
-       
+        <LinearLayout
+            android:id="@+id/absd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3px" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dieu_name"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dieu_school"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dieu_telephone"
+                    android:textColor="#FFFF00" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lskwi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3px" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cuong_name"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/school"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cuong_telephone"
+                    android:textColor="#FFFF00" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lskwis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3px" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/long_name"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/school"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/long_telephone"
+                    android:textColor="#FFFF00" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lskwifw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3px" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vuong_name"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/school"
+                    android:textColor="#FFFF00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vuong_telephone"
+                    android:textColor="#FFFF00" />
+            </LinearLayout>
+        </LinearLayout>
+		<Button 
+		    android:id="@+id/link"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/link_text"
+		    android:textColor="#0000FF"
+		    android:background="#FFFFFF"/>       
+        
     </LinearLayout>
 
 </ScrollView>

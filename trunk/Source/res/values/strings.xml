@@ -4,13 +4,14 @@
     <string name="hello">Hello World, mainActivity!</string>
     <string name="app_name">Smart Calculator</string>
     <string name="copyright">The copyright.........</string>
+    <string name="help_text">empty  </string>
+    <string name="link_text">http://www.niithanoi.vn</string>
     
     <string name="duong_name">Nguyen Dai Duong</string>
-    <string name="duong_school">CD CN HN</string>
+    <string name="school">CD CN HN</string>
     <string name="duong_telephone">0942082891</string>
     
     <string name="cuong_name">Nguyen Quoc Cuong</string>
-    <string name="cuong_school">CD CN HN</string>
     <string name="cuong_telephone">01649649730</string>
     
     <string name="dieu_name">Bui Thi Hong Dieu</string>
@@ -18,11 +19,9 @@
     <string name="dieu_telephone">01649606949</string>
     
     <string name="vuong_name">Do Quoc Vuong</string>
-    <string name="vuong_school">CD CN HN</string>
     <string name="vuong_telephone">01658768845</string>
     
     <string name="long_name">Hoang Quoc Long</string>
-    <string name="long_school">CD CN HN</string>
     <string name="long_telephone">1679688998</string>
 
 </resources>
