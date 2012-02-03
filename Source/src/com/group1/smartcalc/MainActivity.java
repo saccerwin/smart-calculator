@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 public class MainActivity extends Activity {
     /** Called when the activity is first created. */
@@ -36,16 +34,19 @@ public class MainActivity extends Activity {
             dialog.setContentView(R.layout.aboutus);
             dialog.setTitle("About us");
             dialog.setCancelable(true);
-            
-  /*          ImageView imageView = (ImageView) dialog.findViewById(R.id.imgAbout);
-            imageView.setImageResource(R.drawable.ic_launcher);
-            
-            TextView txtContent = (TextView) dialog.findViewById(R.id.txtAbout);
-            txtContent.setText("About us");*/
+ 
             dialog.show();
+    
         	return true;
         	
         case R.id.help:
+        	Dialog dialog1 = new Dialog(MainActivity.this);
+            
+            dialog1.setContentView(R.layout.helplayout);
+            dialog1.setTitle("Help");
+            dialog1.setCancelable(true);
+            dialog1.show();
+
             return true;
             
         default:
