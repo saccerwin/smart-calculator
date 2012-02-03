@@ -5,8 +5,318 @@
     android:orientation="vertical" >
 
     <TextView
+        android:id="@+id/txtBT"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        />
+      <TextView
+        android:id="@+id/txtKQ"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+      <TextView
+     
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+      
+
+
+
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal" >
+          
+          <LinearLayout 
+             android:orientation="vertical"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+             
+             <LinearLayout 
+             android:orientation="horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+              <Button
+                     android:id="@+id/butCan"
+                     android:layout_width="56dp"
+                     android:layout_height="wrap_content" 
+                     android:text="√"/>
+
+
+             <Button
+                 android:id="@+id/butSQR"
+                 android:layout_width="56dp"
+                 android:layout_height="wrap_content"
+                 android:text="^" />
+
+
+             <Button
+                 android:id="@+id/buttrai"
+                 android:layout_width="56dp"
+                 android:layout_height="wrap_content"
+                 android:text="(" />
+
+
+             <Button
+                 android:id="@+id/butphai"
+                 android:layout_width="56dp"
+                 android:layout_height="wrap_content"
+                 android:text=")" />
+              
+          </LinearLayout>
+          <LinearLayout 
+             android:orientation="horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+                 <Button
+                     android:id="@+id/butSin"
+                     android:layout_width="56dp"
+                     android:layout_height="wrap_content" 
+                     android:text="Sin"/>
+
+
+             <Button
+                 android:id="@+id/butCos"
+                 android:layout_width="56dp"
+                 android:layout_height="wrap_content"
+                 android:text="Cos" />
+
+
+             <Button
+                 android:id="@+id/butTan"
+                 android:layout_width="56dp"
+                 android:layout_height="wrap_content"
+                 android:text="Tan" />
+
+
+             <Button
+                 android:id="@+id/butCot"
+                 android:layout_width="56dp"
+                 android:layout_height="wrap_content"
+                 android:text="Cot" />
+              
+          </LinearLayout>
+          <LinearLayout 
+             android:orientation="horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+                 <Button
+                     android:id="@+id/butasin"
+                     android:layout_width="56dp"
+                     android:layout_height="wrap_content" 
+                     android:text="aSin"/>
+
+
+             <Button
+                 android:id="@+id/butacos"
+                 android:layout_width="56dp"
+                 android:layout_height="wrap_content"
+                 android:text="aCos" />
+
+
+             <Button
+                 android:id="@+id/butatan"
+                 android:layout_width="56dp"
+                 android:layout_height="wrap_content"
+                 android:text="aTan" />
+
+
+             <Button
+                 android:id="@+id/butpi"
+                 android:layout_width="56dp"
+                 android:layout_height="wrap_content"
+                 android:text="π" />
+              
+          </LinearLayout>
+          <LinearLayout 
+             android:orientation="horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+                 <Button
+                     android:id="@+id/butlog"
+                     android:layout_width="56dp"
+                     android:layout_height="wrap_content"
+					 android:text="log"/>
+
+
+             <Button
+                 android:id="@+id/butlog10"
+                 android:layout_width="56dp"
+                 android:layout_height="wrap_content"
+                 android:text="lg10" />
+
+
+             <Button
+                 android:id="@+id/bute"
+                 android:layout_width="56dp"
+                 android:layout_height="wrap_content"
+                 android:text="e" />
+
+
+             <Button
+                 android:id="@+id/butdeg"
+                 android:layout_width="56dp"
+                 android:layout_height="wrap_content"
+                 android:text="Deg" />
+              
+          </LinearLayout>        
+        </LinearLayout>
+      <TextView 
+          android:layout_height="fill_parent"
+          android:layout_width="10dp"/>
+      <LinearLayout 
+          android:orientation="vertical"
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent">
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+
+
+              <Button
+                  android:id="@+id/but1"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content"
+                  android:text="1" />
+
+               <Button
+                  android:id="@+id/but2"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content" 
+                  android:text="2"/>
+                <Button
+                  android:id="@+id/but3"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content"
+                  android:text="3" />
+                 <Button
+                  android:id="@+id/butdel"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content" 
+                  android:text="Del"/>
+                  <Button
+                  android:id="@+id/butC"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content" 
+                  android:text="C"/>
+              
+              
+          </LinearLayout>
+           <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+
+
+              <Button
+                  android:id="@+id/btn4"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content" 
+                  android:text="4"/>
+
+               <Button
+                  android:id="@+id/btn5"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content" 
+                  android:text="5"/>
+                <Button
+                  android:id="@+id/btn6"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content"
+                  android:text="6" />
+                 <Button
+                  android:id="@+id/btnCong"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content" 
+                  android:text="+"/>
+                  <Button
+                  android:id="@+id/btnTru"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content" 
+                  android:text="-"/>
+              
+              
+          </LinearLayout>
+           <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+
+
+              <Button
+                  android:id="@+id/btn7"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content"
+                  android:text="7" />
+
+               <Button
+                  android:id="@+id/btn8"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content"
+                  android:text="8" />
+                <Button
+                  android:id="@+id/btn9"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content"
+                  android:text="9" />
+                 <Button
+                  android:id="@+id/btnnhan"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content"
+                  android:text="X" 
+                  />
+                  <Button
+                  android:id="@+id/btnchia"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content" 
+                  android:text="÷"/>
+              
+              
+          </LinearLayout>
+           <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+
+
+              <Button
+                  android:id="@+id/btnphantram"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content"
+                  android:text="%" />
+
+               <Button
+                  android:id="@+id/btn0"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content" 
+                  android:text="0"/>
+                <Button
+                  android:id="@+id/btnphay"
+                  android:layout_width="60dp"
+                  android:layout_height="wrap_content"
+                  android:text="." />
+
+
+                 <Button
+                     android:id="@+id/butbang"
+                     android:layout_width="120dp"
+                     android:layout_height="wrap_content"
+                     android:text="=" />
+              
+          </LinearLayout>
+      </LinearLayout>
+          
+      </LinearLayout>
+     
 
 </LinearLayout>
