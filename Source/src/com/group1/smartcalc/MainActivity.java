@@ -26,26 +26,26 @@ public class MainActivity extends Activity {
     
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {	
+    	Dialog dialog;
         switch (item.getItemId()) {
         
         case R.id.about:
-        	Dialog dialog = new Dialog(MainActivity.this);
+        	dialog = new Dialog(MainActivity.this);
             
             dialog.setContentView(R.layout.aboutus);
             dialog.setTitle("About us");
             dialog.setCancelable(true);
- 
             dialog.show();
     
         	return true;
         	
         case R.id.help:
-        	Dialog dialog1 = new Dialog(MainActivity.this);
+        	dialog = new Dialog(MainActivity.this);
             
-            dialog1.setContentView(R.layout.helplayout);
-            dialog1.setTitle("Help");
-            dialog1.setCancelable(true);
-            dialog1.show();
+            dialog.setContentView(R.layout.helplayout);
+            dialog.setTitle("Help");
+            dialog.setCancelable(true);
+            dialog.show();
 
             return true;
             
