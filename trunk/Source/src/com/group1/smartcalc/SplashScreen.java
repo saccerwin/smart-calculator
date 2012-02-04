@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 
 public class SplashScreen extends Activity {
-    protected boolean _active = true;
-    protected int _splashTime = 5000;
+	protected boolean _active = true; // trạng thái hiện tại của activity
+    protected int _splashTime = 5000; // thời gian hiển thị splash (ms)
     
     /** Called when the activity is first created. */
     @Override
@@ -16,7 +16,7 @@ public class SplashScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splashscreen);
         
-        // thread for displaying the SplashScreen
+        // thread để hiển thị SplashScreen
         Thread splashTread = new Thread() {
             @Override
             public void run() {
@@ -29,8 +29,9 @@ public class SplashScreen extends Activity {
                         }
                     }
                 } catch(InterruptedException e) {
-                    // do nothing
+                    // không làm gì cả
                 } finally {
+                	// kết thúc activity SplashScreen, gọi ra MainActivity
                     finish();
                     Intent mainIntent = new Intent(SplashScreen.this, MainActivity.class); 
                     SplashScreen.this.startActivity(mainIntent); 
@@ -44,6 +45,8 @@ public class SplashScreen extends Activity {
     
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+    	//Trong quá trình hiển thị Splash Screen
+    	//Nếu nhận được sự kiện chạm vào màn hình thì sẽ dừng activity SplashScreen
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             _active = false;
         }
