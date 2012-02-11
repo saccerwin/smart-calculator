@@ -38,8 +38,8 @@ public final class R {
         public static final int lskwifw=0x7f060005;
         public static final int lskwis=0x7f060004;
         public static final int shjsi=0x7f060001;
-        public static final int txtInput=0x7f060008;
-        public static final int txtResult=0x7f060009;
+        public static final int txtInput=0x7f060009;
+        public static final int txtResult=0x7f060008;
     }
     public static final class layout {
         public static final int aboutus=0x7f030000;
