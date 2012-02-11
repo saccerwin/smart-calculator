@@ -11,57 +11,35 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int splashscreen=0x7f020001;
+        public static final int app_vertical=0x7f020000;
+        public static final int calc_ic=0x7f020001;
+        public static final int clear=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int inputview1=0x7f020004;
+        public static final int keypad=0x7f020005;
+        public static final int keypad_advance=0x7f020006;
+        public static final int keypad_const=0x7f020007;
+        public static final int keypad_op=0x7f020008;
+        public static final int keypad_other=0x7f020009;
+        public static final int keypad_result=0x7f02000a;
+        public static final int splashscreen=0x7f02000b;
+        public static final int stackview1=0x7f02000c;
     }
     public static final class id {
-        public static final int about=0x7f06002d;
+        public static final int about=0x7f06000c;
         public static final int absd=0x7f060002;
-        public static final int btn0=0x7f06002a;
-        public static final int btn4=0x7f06001f;
-        public static final int btn5=0x7f060020;
-        public static final int btn6=0x7f060021;
-        public static final int btn7=0x7f060024;
-        public static final int btn8=0x7f060025;
-        public static final int btn9=0x7f060026;
-        public static final int btnCong=0x7f060022;
-        public static final int btnTru=0x7f060023;
-        public static final int btnchia=0x7f060028;
-        public static final int btnnhan=0x7f060027;
-        public static final int btnphantram=0x7f060029;
-        public static final int btnphay=0x7f06002b;
-        public static final int but1=0x7f06001a;
-        public static final int but2=0x7f06001b;
-        public static final int but3=0x7f06001c;
-        public static final int butC=0x7f06001e;
-        public static final int butCan=0x7f06000a;
-        public static final int butCos=0x7f06000f;
-        public static final int butCot=0x7f060011;
-        public static final int butSQR=0x7f06000b;
-        public static final int butSin=0x7f06000e;
-        public static final int butTan=0x7f060010;
-        public static final int butacos=0x7f060013;
-        public static final int butasin=0x7f060012;
-        public static final int butatan=0x7f060014;
-        public static final int butbang=0x7f06002c;
-        public static final int butdeg=0x7f060019;
-        public static final int butdel=0x7f06001d;
-        public static final int bute=0x7f060018;
-        public static final int butlog=0x7f060016;
-        public static final int butlog10=0x7f060017;
-        public static final int butphai=0x7f06000d;
-        public static final int butpi=0x7f060015;
-        public static final int buttrai=0x7f06000c;
+        public static final int btnClear=0x7f06000a;
+        public static final int grdButtons=0x7f06000b;
         public static final int hehe=0x7f060007;
-        public static final int help=0x7f06002e;
+        public static final int help=0x7f06000d;
         public static final int imgAbout=0x7f060000;
         public static final int link=0x7f060006;
         public static final int lskwi=0x7f060003;
         public static final int lskwifw=0x7f060005;
         public static final int lskwis=0x7f060004;
         public static final int shjsi=0x7f060001;
-        public static final int txtBT=0x7f060008;
-        public static final int txtKQ=0x7f060009;
+        public static final int txtInput=0x7f060008;
+        public static final int txtResult=0x7f060009;
     }
     public static final class layout {
         public static final int aboutus=0x7f030000;
@@ -88,6 +66,7 @@ public final class R {
         public static final int long_name=0x7f04000f;
         public static final int long_telephone=0x7f040010;
         public static final int school=0x7f040006;
+        public static final int sqrt_sign=0x7f040011;
         public static final int vuong_name=0x7f04000d;
         public static final int vuong_telephone=0x7f04000e;
     }
