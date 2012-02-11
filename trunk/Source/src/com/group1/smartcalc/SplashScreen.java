@@ -1,46 +1,58 @@
 package com.group1.smartcalc;
 
+
 import com.group1.smartcalc.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.Window;
+import android.view.WindowManager;
 
-public class SplashScreen extends Activity {
+public class SplashScreen extends Activity implements Runnable {
 	protected boolean _active = true; // trạng thái hiện tại của activity
-    protected int _splashTime = 5000; // thời gian hiển thị splash (ms)
-    
+    protected int _splashTime = 3000; // thời gian hiển thị splash (ms)
+    private Thread _splashThread;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.splashscreen);
         
-        // thread để hiển thị SplashScreen
-        Thread splashTread = new Thread() {
-            @Override
-            public void run() {
-                try {
-                    int waited = 0;
-                    while(_active && (waited < _splashTime)) {
-                        sleep(100);
-                        if(_active) {
-                            waited += 100;
-                        }
-                    }
-                } catch(InterruptedException e) {
-                    // không làm gì cả
-                } finally {
-                	// kết thúc activity SplashScreen, gọi ra MainActivity
-                    finish();
-                    Intent mainIntent = new Intent(SplashScreen.this, MainActivity.class); 
-                    SplashScreen.this.startActivity(mainIntent); 
-                    SplashScreen.this.finish(); 
-                    stop();
-                }
-            }
-        };
-        splashTread.start();
+        _active = true;
+    }
+    
+	@Override
+	protected void onResume() {
+		super.onResume();
+	}
+    
+	@Override
+	public void onWindowFocusChanged(boolean hasFocus) {
+		// neu hien tai ko co tuyen nao chay thi se khoi tao thread moi de chay qua trinh gioi thieu logo
+		if (_splashThread == null) {
+			_splashThread = new Thread(this);
+			_splashThread.start();
+		}
+		super.onWindowFocusChanged(hasFocus);
+	}
+    
+	@Override
+    public void run() {
+    	try {
+			while (_active && (_splashTime >= 0)) {
+				_splashTime -= 100;
+				Thread.sleep(100);
+			}
+
+    	} catch (InterruptedException e) {
+			// TODO: handle exception
+		} finally {
+			startActivity(new Intent(getApplicationContext(),CalcActivity.class));
+			finish();
+		}
     }
     
     @Override
@@ -50,6 +62,6 @@ public class SplashScreen extends Activity {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             _active = false;
         }
-        return true;
+        return super.onTouchEvent(event);
     }
 }

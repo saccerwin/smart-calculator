@@ -23,5 +23,6 @@
     
     <string name="long_name">Hoang Quoc Long</string>
     <string name="long_telephone">1679688998</string>
+    <string name="sqrt_sign">\u221a</string>
 
 </resources>
