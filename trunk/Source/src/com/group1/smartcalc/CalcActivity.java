@@ -3,12 +3,12 @@ package com.group1.smartcalc;
 import android.app.Activity;
 import android.app.Dialog;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
@@ -34,14 +34,14 @@ public class CalcActivity extends Activity {
 		_txtInput = (TextView) findViewById(R.id.txtInput);
 		_txtResult = (TextView)	findViewById(R.id.txtResult);
 		
-		_btnClear = (ImageButton) findViewById(R.id.btnClear);
-		
+		/** ------------- Clear button ----------- */
+		_btnClear = (ImageButton) findViewById(R.id.btnClear);		
 		_btnClear.setOnClickListener(new OnClickListener() {				
-			String currentInput = _txtInput.getText().toString();
-			int currentInputLen = currentInput.length();
 			
 			@Override
 			public void onClick(View v) {
+				String currentInput = _txtInput.getText().toString();
+				int currentInputLen = currentInput.length();
 				int endIndex = currentInputLen - 1;
 
 				// Nếu có 1 ký tự thì set txtInput về 0
@@ -55,16 +55,18 @@ public class CalcActivity extends Activity {
 				
 			}
 		});
-		//bug
-//		_btnClear.setOnLongClickListener(new OnLongClickListener() {
-//			
-//			@Override
-//			public boolean onLongClick(View v) {
-//				_txtInput.setText("0");
-//				_txtResult.setText("0");
-//				return false;
-//			}
-//		});
+
+		_btnClear.setOnLongClickListener(new OnLongClickListener() {
+			
+			@Override
+			public boolean onLongClick(View v) {
+				_txtInput.setText("0");
+				_txtResult.setText("0");
+				return false;
+			}
+		});
+		
+		/**---------- GridView keypad ------------*/
 		_keypadGrid = (GridView) findViewById(R.id.grdButtons);
 		_keypadAdapter = new KeypadAdapter(this);
 		_keypadGrid.setAdapter(_keypadAdapter);
@@ -91,11 +93,8 @@ public class CalcActivity extends Activity {
 	private void processKeypadInput(KeypadButton keypadButton) {
 		String text = keypadButton.getText().toString();
 		String currentInput = _txtInput.getText().toString();
-		
+		Double result = 0.0;
 		int currentInputLen = currentInput.length();
-		//String result = null;
-		//double userInputValue = Double.NaN;
-		
 		switch (keypadButton) {
 		case SIGN:
 			if (currentInputLen > 0 && currentInput != "0") {
@@ -116,6 +115,11 @@ public class CalcActivity extends Activity {
 			else
 				_txtInput.setText(currentInput.toString() + ".");
 			break;		
+		case CALCULATE:
+			Calculate calc = new Calculate();
+			result = calc.calculate(currentInput, true);
+			_txtResult.setText(result.toString());
+			break;
 
 		case SQRT:
 			_txtInput.setText(currentInput.toString() + "sqrt(");
