@@ -39,7 +39,7 @@ public class SplashScreen extends Activity implements Runnable {
 		super.onWindowFocusChanged(hasFocus);
 	}
     
-	@Override
+	
     public void run() {
     	try {
 			while (_active && (_splashTime >= 0)) {

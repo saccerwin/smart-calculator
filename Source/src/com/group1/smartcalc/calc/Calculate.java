@@ -87,7 +87,7 @@ public class Calculate {
 		char k=s.charAt(0),k1;
 		byte pri,pri1; Double number;
 		
-		if (k=='+'||k=='-') stk.push(0);
+		
 		while (i<leng){
 			
 			k=s.charAt(i);
@@ -111,7 +111,9 @@ public class Calculate {
 						{number=cal(stk.pull(), stk.pull(), k1);stk.push(number);k1=stk_c.pull();}
 					stk_c.push(k1);stk_c.push(k);i++;}
 				else
-					if (pri==7){stk_c.push(k);i++;}
+					if (pri==7){
+						stk_c.push(k);i++;k=s.charAt(i);
+						if (k=='+'||k=='-') stk.push(0);}
 					else
 						if (pri==8){
 							k1=stk_c.pull();i++;

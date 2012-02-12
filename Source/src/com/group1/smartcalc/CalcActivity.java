@@ -41,7 +41,7 @@ public class CalcActivity extends Activity {
 		_btnClear = (ImageButton) findViewById(R.id.btnClear);		
 		_btnClear.setOnClickListener(new OnClickListener() {				
 			
-			@Override
+		
 			public void onClick(View v) {
 				String currentInput = _txtInput.getText().toString();
 				int currentInputLen = currentInput.length();
@@ -61,7 +61,6 @@ public class CalcActivity extends Activity {
 
 		_btnClear.setOnLongClickListener(new OnLongClickListener() {
 			
-			@Override
 			public boolean onLongClick(View v) {
 				_txtInput.setText("0");
 				_txtResult.setText("0");
@@ -80,7 +79,6 @@ public class CalcActivity extends Activity {
 		});
 		
 		_keypadAdapter.setOnButtonClickListener(new OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				Button btn = (Button) v;
 				KeypadButton keypadButton = (KeypadButton) btn.getTag();
