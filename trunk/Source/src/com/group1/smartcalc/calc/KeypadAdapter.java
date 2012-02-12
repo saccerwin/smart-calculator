@@ -95,12 +95,12 @@ public class KeypadAdapter extends BaseAdapter {
 			KeypadButton.TAN, KeypadButton.COT, KeypadButton.FOUR,
 			KeypadButton.FIVE, KeypadButton.SIX, KeypadButton.PLUS,
 			KeypadButton.MINUS, KeypadButton.ASIN, KeypadButton.ACOS,
-			KeypadButton.ATAN, KeypadButton.MOD, KeypadButton.ONE,
+			KeypadButton.ATAN, KeypadButton.DEG_RAD, KeypadButton.ONE,
 			KeypadButton.TWO, KeypadButton.THREE, KeypadButton.MULTIPLY,
 			KeypadButton.DIV, KeypadButton.LOG, KeypadButton.LN,
-			KeypadButton.E, KeypadButton.DEG_RAD, KeypadButton.PI,
+			KeypadButton.E, KeypadButton.PI, KeypadButton.DUMMY,
 			KeypadButton.ZERO, KeypadButton.DECIMAL_SEP,
-			KeypadButton.CALCULATE, 
+			KeypadButton.CALCULATE, KeypadButton.MOD
 		};
 
 }
