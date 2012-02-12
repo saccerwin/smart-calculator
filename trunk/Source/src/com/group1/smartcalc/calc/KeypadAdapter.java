@@ -98,7 +98,7 @@ public class KeypadAdapter extends BaseAdapter {
 			KeypadButton.ATAN, KeypadButton.MOD, KeypadButton.ONE,
 			KeypadButton.TWO, KeypadButton.THREE, KeypadButton.MULTIPLY,
 			KeypadButton.DIV, KeypadButton.LOG, KeypadButton.LN,
-			KeypadButton.E, KeypadButton.DEC_RAD, KeypadButton.PI,
+			KeypadButton.E, KeypadButton.DEG_RAD, KeypadButton.PI,
 			KeypadButton.ZERO, KeypadButton.DECIMAL_SEP,
 			KeypadButton.CALCULATE, 
 		};

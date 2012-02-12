@@ -1,4 +1,4 @@
-package com.group1.smartcalc;
+package com.group1.smartcalc.calc;
 
 public class Calculate {
 	private char note(String s){
