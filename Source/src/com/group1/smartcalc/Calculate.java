@@ -76,7 +76,7 @@ public class Calculate {
 			return 0;
 		}
 	}
-	public double caltulate(String s,boolean isRad) {
+	public double calculate(String s,boolean isRad) {
 		// TODO Auto-generated method stub
 		s='('+s+')';
 		stack stk=new stack(50);
