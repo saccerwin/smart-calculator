@@ -2,6 +2,8 @@ package com.group1.smartcalc;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -181,7 +183,9 @@ public class CalcActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {	
     	Dialog dialog;
         switch (item.getItemId()) {
-        
+        case R.id.chart:
+        	startActivity(new Intent(getApplicationContext(), DrawActivity.class));
+        	return true;
         case R.id.about:
         	dialog = new Dialog(CalcActivity.this);
             
@@ -193,13 +197,7 @@ public class CalcActivity extends Activity {
         	return true;
         	
         case R.id.help:
-        	dialog = new Dialog(CalcActivity.this);
-            
-            dialog.setContentView(R.layout.helplayout);
-            dialog.setTitle("Help");
-            dialog.setCancelable(true);
-            dialog.show();
-
+        	startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://code.google.com/p/smart-calculator/")));
             return true;
             
         default:
