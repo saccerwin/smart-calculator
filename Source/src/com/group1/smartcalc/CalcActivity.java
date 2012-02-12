@@ -16,6 +16,7 @@ import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.group1.smartcalc.calc.Calculate;
 import com.group1.smartcalc.calc.KeypadAdapter;
 import com.group1.smartcalc.calc.KeypadButton;
 

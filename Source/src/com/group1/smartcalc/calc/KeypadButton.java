@@ -37,7 +37,7 @@ public enum KeypadButton {
 	, MOD("Mod",KeypadButtonCategory.OPERATOR)
 	
 	// Other
-	, DEC_RAD("DEC", KeypadButtonCategory.OTHER)
+	, DEG_RAD("DEG", KeypadButtonCategory.OTHER)
 	, RECIPROC("1/x",KeypadButtonCategory.OTHER)
 	, DECIMAL_SEP(".",KeypadButtonCategory.OTHER)
 	, SIGN("±",KeypadButtonCategory.OTHER)
