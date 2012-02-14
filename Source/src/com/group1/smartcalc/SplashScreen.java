@@ -5,6 +5,7 @@ import com.group1.smartcalc.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.Window;
 import android.view.WindowManager;
@@ -48,7 +49,7 @@ public class SplashScreen extends Activity implements Runnable {
 			}
 
     	} catch (InterruptedException e) {
-			// TODO: handle exception
+			Log.d("scBug", e.toString());
 		} finally {
 			startActivity(new Intent(getApplicationContext(),CalcActivity.class));
 			finish();

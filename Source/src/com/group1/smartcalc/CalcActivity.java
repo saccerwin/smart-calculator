@@ -110,7 +110,7 @@ public class CalcActivity extends Activity {
 				}
 			}
 			break;
-		case DECIMAL_SEP:
+		case DECIMAL_SEP: //cần hoàn thiện thêm
 			if(currentInput.contains("."))
 				return;
 			else
@@ -118,7 +118,7 @@ public class CalcActivity extends Activity {
 			break;		
 		case CALCULATE:
 			Calculate calc = new Calculate();
-			result = calc.calculate(currentInput, true);
+			result = calc.calculate(currentInput, true); //tạm thời dùng radian để tính, sẽ sửa sau
 			_txtResult.setText(result.toString());
 			break;
 
@@ -181,6 +181,10 @@ public class CalcActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {	
     	Dialog dialog;
         switch (item.getItemId()) {
+        case R.id.graph:
+        case R.id.equation:
+        case R.id.converter:
+        	return true;
         case R.id.chart:
         	startActivity(new Intent(getApplicationContext(), DrawActivity.class));
         	return true;
