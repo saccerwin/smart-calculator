@@ -64,4 +64,8 @@ public enum KeypadButton {
 	public CharSequence getText() {
 		return _text;
 	}
+	
+	public void setText(String text) {
+		_text = text;
+	}
 }
