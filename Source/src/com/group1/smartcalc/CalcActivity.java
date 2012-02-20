@@ -144,7 +144,11 @@ public class CalcActivity extends Activity {
 			result = calc.calculate(currentInput, isRad);
 			_txtResult.setText(result.toString());
 			break;
-
+		case RECIPROC:
+			Calculate calc1 = new Calculate();
+			result = calc1.calculate("1/(" +  currentInput + ")", isRad);
+			_txtResult.setText(result.toString());
+			break;
 		case SQRT:
 			_txtInput.setText(currentInput.toString() + "sqrt(");
 			break;	

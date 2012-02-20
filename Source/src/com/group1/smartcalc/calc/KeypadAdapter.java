@@ -88,19 +88,11 @@ public class KeypadAdapter extends BaseAdapter {
 
 	// Tạo mảng chứa các button bên trong (theo thứ tự)
 	private KeypadButton[] _buttons = { 
-			KeypadButton.SQRT, KeypadButton.SQR,
-			KeypadButton.OPEN, KeypadButton.CLOSE, KeypadButton.SEVEN,
-			KeypadButton.EIGHT, KeypadButton.NINE, KeypadButton.RECIPROC,
-			KeypadButton.SIGN, KeypadButton.SIN, KeypadButton.COS,
-			KeypadButton.TAN, KeypadButton.COT, KeypadButton.FOUR,
-			KeypadButton.FIVE, KeypadButton.SIX, KeypadButton.PLUS,
-			KeypadButton.MINUS, KeypadButton.ASIN, KeypadButton.ACOS,
-			KeypadButton.ATAN, KeypadButton.DEG_RAD, KeypadButton.ONE,
-			KeypadButton.TWO, KeypadButton.THREE, KeypadButton.MULTIPLY,
-			KeypadButton.DIV, KeypadButton.LOG, KeypadButton.LN,
-			KeypadButton.E, KeypadButton.PI, KeypadButton.DUMMY,
-			KeypadButton.ZERO, KeypadButton.DECIMAL_SEP,
-			KeypadButton.CALCULATE, KeypadButton.MOD
+			  KeypadButton.ASIN, KeypadButton.ACOS,  KeypadButton.ATAN, KeypadButton.SQRT, KeypadButton.SQR, KeypadButton.RECIPROC,KeypadButton.SIGN, 
+			KeypadButton.SIN, KeypadButton.COS,KeypadButton.SEVEN, KeypadButton.EIGHT, KeypadButton.NINE, KeypadButton.OPEN, KeypadButton.CLOSE, 
+			KeypadButton.TAN, KeypadButton.COT, KeypadButton.FOUR, KeypadButton.FIVE, KeypadButton.SIX, KeypadButton.PLUS, KeypadButton.MINUS,		
+			KeypadButton.LOG, KeypadButton.LN, KeypadButton.ONE, KeypadButton.TWO, KeypadButton.THREE, KeypadButton.MULTIPLY, KeypadButton.DIV,
+			KeypadButton.E, KeypadButton.PI, KeypadButton.DEG_RAD, KeypadButton.ZERO, KeypadButton.DECIMAL_SEP, KeypadButton.CALCULATE, KeypadButton.MOD
 		};
 
 }
