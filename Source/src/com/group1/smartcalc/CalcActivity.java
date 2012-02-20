@@ -1,16 +1,18 @@
 package com.group1.smartcalc;
 
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
@@ -28,11 +30,14 @@ public class CalcActivity extends Activity {
 	TextView _txtInput;
 	TextView _txtResult;
 	ImageButton _btnClear;
+	private boolean isRad = false;
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.main);
 		_txtInput = (TextView) findViewById(R.id.txtInput);
 		_txtResult = (TextView)	findViewById(R.id.txtResult);
@@ -46,24 +51,34 @@ public class CalcActivity extends Activity {
 				String currentInput = _txtInput.getText().toString();
 				int currentInputLen = currentInput.length();
 				int endIndex = currentInputLen - 1;
-
-				// Nếu có 1 ký tự thì set txtInput về 0
-				if (endIndex < 1) {
-					_txtInput.setText("0");
-				}
-				// xóa ký tự cuối cùng của txtInput
-				else {
-					_txtInput.setText(currentInput.subSequence(0, endIndex));
-				}
 				
+				//kiểm tra nếu chuỗi có <= 1 phần tử
+				if (endIndex < 1)
+				{
+					_txtInput.setText("");
+					return;
+				}
+				if (!Character.isDigit(currentInput.charAt(endIndex))) {	// kiểm tra xem ký tự hiện tại có phải là số không				
+					while (!Character.isDigit(currentInput.charAt(endIndex - 1)))  { // check ký tự tiếp theo có phải là số không
+						endIndex--;	// nếu không phải thì xóa luôn số đó
+						if (endIndex < 1) // //kiểm tra nếu chuỗi có <= 1 phần tử
+						{
+							_txtInput.setText("");
+							return;
+						}
+					}					
+				}
+
+				_txtInput.setText(currentInput.subSequence(0, endIndex));
+
 			}
 		});
 
 		_btnClear.setOnLongClickListener(new OnLongClickListener() {
 			
 			public boolean onLongClick(View v) {
-				_txtInput.setText("0");
-				_txtResult.setText("0");
+				_txtInput.setText("");
+				_txtResult.setText("");
 				return false;
 			}
 		});
@@ -87,8 +102,7 @@ public class CalcActivity extends Activity {
 		});
 	}
 	
-	
-	
+
 	
 	/**-------------------Keypad------------------ */
 	private void processKeypadInput(KeypadButton keypadButton) {
@@ -97,6 +111,15 @@ public class CalcActivity extends Activity {
 		Double result = 0.0;
 		int currentInputLen = currentInput.length();
 		switch (keypadButton) {
+		case DEG_RAD:
+			isRad = !isRad;
+			if (text == "RAD")
+				keypadButton.setText("DEG");
+			else
+				keypadButton.setText("RAD");
+			_keypadGrid.setAdapter(_keypadAdapter);
+			_keypadAdapter.notifyDataSetChanged();			
+			break;
 		case SIGN:
 			if (currentInputLen > 0 && currentInput != "0") {
 				// nếu có dấu trừ thì bỏ đi
@@ -118,7 +141,7 @@ public class CalcActivity extends Activity {
 			break;		
 		case CALCULATE:
 			Calculate calc = new Calculate();
-			result = calc.calculate(currentInput, true); //tạm thời dùng radian để tính, sẽ sửa sau
+			result = calc.calculate(currentInput, isRad);
 			_txtResult.setText(result.toString());
 			break;
 
@@ -179,7 +202,6 @@ public class CalcActivity extends Activity {
     
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {	
-    	Dialog dialog;
         switch (item.getItemId()) {
         case R.id.graph:
         case R.id.equation:
@@ -187,15 +209,10 @@ public class CalcActivity extends Activity {
         	return true;
         case R.id.chart:
         	startActivity(new Intent(getApplicationContext(), DrawActivity.class));
+        	finish();
         	return true;
         case R.id.about:
-        	dialog = new Dialog(CalcActivity.this);
-            
-            dialog.setContentView(R.layout.aboutus);
-            dialog.setTitle("About us");
-            dialog.setCancelable(true);
-            dialog.show();
-    
+        	startActivity(new Intent(getApplicationContext(), AboutUs.class));
         	return true;
         	
         case R.id.help:
