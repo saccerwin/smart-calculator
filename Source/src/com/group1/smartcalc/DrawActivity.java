@@ -2,10 +2,15 @@ package com.group1.smartcalc;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
 public class DrawActivity extends Activity{
@@ -34,6 +39,41 @@ public class DrawActivity extends Activity{
 
 	
 	}
+	
+    /**-------------Menu---------------*/
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {	
+        switch (item.getItemId()) {
+        case R.id.graph:
+        case R.id.converter:
+        	return true;
+        case R.id.equation:
+        	startActivity(new Intent(getApplicationContext(), EquationActivity.class));
+        	finish();
+        	return true;
+        case R.id.calc:
+        	startActivity(new Intent(getApplicationContext(), CalcActivity.class));
+        	finish();
+        	return true;
+        case R.id.about:
+        	startActivity(new Intent(getApplicationContext(), AboutUs.class));
+        	return true;
+        	
+        case R.id.help:
+        	startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://code.google.com/p/smart-calculator/")));
+            return true;
+            
+        default:
+            return super.onOptionsItemSelected(item);
+        }
+    }
 
 }
 

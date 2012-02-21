@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -208,8 +207,11 @@ public class CalcActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {	
         switch (item.getItemId()) {
         case R.id.graph:
-        case R.id.equation:
         case R.id.converter:
+        	return true;
+        case R.id.equation:
+        	startActivity(new Intent(getApplicationContext(), EquationActivity.class));
+        	finish();
         	return true;
         case R.id.chart:
         	startActivity(new Intent(getApplicationContext(), DrawActivity.class));
