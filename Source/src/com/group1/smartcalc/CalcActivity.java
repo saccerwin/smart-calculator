@@ -207,6 +207,8 @@ public class CalcActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {	
         switch (item.getItemId()) {
         case R.id.graph:
+        	startActivity(new Intent(getApplicationContext(), TestdrawActivity.class));
+        	return true;
         case R.id.converter:
         	return true;
         case R.id.equation:

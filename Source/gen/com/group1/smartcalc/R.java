@@ -26,31 +26,30 @@ public final class R {
         public static final int stackview1=0x7f02000c;
     }
     public static final class id {
-        public static final int a=0x7f060000;
-        public static final int about=0x7f060010;
-        public static final int b=0x7f060001;
-        public static final int btnClear=0x7f060009;
-        public static final int c=0x7f060002;
-        public static final int calc=0x7f06000b;
-        public static final int chart=0x7f06000d;
-        public static final int converter=0x7f06000f;
-        public static final int equation=0x7f06000e;
-        public static final int graph=0x7f06000c;
-        public static final int grdButtons=0x7f06000a;
-        public static final int hehe=0x7f060006;
-        public static final int help=0x7f060011;
-        public static final int hien=0x7f060005;
-        public static final int nhaplai=0x7f060004;
-        public static final int tinh=0x7f060003;
-        public static final int txtInput=0x7f060008;
-        public static final int txtResult=0x7f060007;
+        public static final int a=0x7f060005;
+        public static final int about=0x7f06000f;
+        public static final int b=0x7f060006;
+        public static final int btnClear=0x7f060003;
+        public static final int c=0x7f060007;
+        public static final int calc=0x7f06000a;
+        public static final int chart=0x7f06000c;
+        public static final int converter=0x7f06000e;
+        public static final int d=0x7f060008;
+        public static final int draw=0x7f060009;
+        public static final int equation=0x7f06000d;
+        public static final int graph=0x7f06000b;
+        public static final int grdButtons=0x7f060004;
+        public static final int hehe=0x7f060000;
+        public static final int help=0x7f060010;
+        public static final int txtInput=0x7f060002;
+        public static final int txtResult=0x7f060001;
     }
     public static final class layout {
         public static final int aboutus=0x7f030000;
-        public static final int equation=0x7f030001;
-        public static final int helplayout=0x7f030002;
-        public static final int main=0x7f030003;
-        public static final int splashscreen=0x7f030004;
+        public static final int helplayout=0x7f030001;
+        public static final int main=0x7f030002;
+        public static final int splashscreen=0x7f030003;
+        public static final int testdraw=0x7f030004;
     }
     public static final class menu {
         public static final int main_menu=0x7f050000;
