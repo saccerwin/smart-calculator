@@ -1,4 +1,4 @@
-package com.group1.smartcalc;
+package com.group1.smartcalc.calc;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -19,9 +19,14 @@ import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.group1.smartcalc.calc.Calculate;
-import com.group1.smartcalc.calc.KeypadAdapter;
-import com.group1.smartcalc.calc.KeypadButton;
+import com.group1.smartcalc.AboutUs;
+import com.group1.smartcalc.R;
+import com.group1.smartcalc.R.id;
+import com.group1.smartcalc.R.layout;
+import com.group1.smartcalc.R.menu;
+import com.group1.smartcalc.chart.DrawActivity;
+import com.group1.smartcalc.equation.EquationActivity;
+import com.group1.smartcalc.graph.TestdrawActivity;
 
 public class CalcActivity extends Activity {   
 	GridView _keypadGrid;

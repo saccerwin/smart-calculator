@@ -1,4 +1,4 @@
-package com.group1.smartcalc;
+package com.group1.smartcalc.graph;
 
 import android.app.Activity;
 import android.content.Context;

@@ -1,4 +1,11 @@
-package com.group1.smartcalc;
+package com.group1.smartcalc.chart;
+
+import com.group1.smartcalc.AboutUs;
+import com.group1.smartcalc.R;
+import com.group1.smartcalc.R.id;
+import com.group1.smartcalc.R.menu;
+import com.group1.smartcalc.calc.CalcActivity;
+import com.group1.smartcalc.equation.EquationActivity;
 
 import android.app.Activity;
 import android.content.Context;
