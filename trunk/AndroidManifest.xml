@@ -20,7 +20,7 @@
         </activity>
         <activity
             android:label="@string/app_name"
-            android:name=".CalcActivity" >
+            android:name=".calc.CalcActivity" >
             <intent-filter >
                 <action android:name="com.group1.smartcalc.CalcActivity" />
 
@@ -29,7 +29,7 @@
         </activity>
         <activity
             android:label="@string/app_name"
-            android:name=".DrawActivity" >
+            android:name=".chart.DrawActivity" >
             <intent-filter >
                 <action android:name="com.group1.smartcalc.DrawActivity" />
 
@@ -47,15 +47,15 @@
         </activity>
                 <activity
             android:label="@string/app_name"
-            android:name=".EquationActivity" >
+            android:name=".equation.EquationActivity" >
             <intent-filter >
                 <action android:name="com.group1.smartcalc.EquationActivity" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TestdrawActivity"></activity>
-        <activity android:name=".Draw1Activity"></activity>
+        <activity android:name=".graph.TestdrawActivity"></activity>
+        <activity android:name=".graph.Draw1Activity"></activity>
     </application>
 
 </manifest>

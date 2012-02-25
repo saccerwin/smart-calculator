@@ -1,4 +1,8 @@
-package com.group1.smartcalc;
+package com.group1.smartcalc.graph;
+
+import com.group1.smartcalc.R;
+import com.group1.smartcalc.R.id;
+import com.group1.smartcalc.R.layout;
 
 import android.app.Activity;
 import android.app.AlertDialog;

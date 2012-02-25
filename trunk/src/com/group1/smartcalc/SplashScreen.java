@@ -2,6 +2,8 @@ package com.group1.smartcalc;
 
 
 import com.group1.smartcalc.R;
+import com.group1.smartcalc.calc.CalcActivity;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
