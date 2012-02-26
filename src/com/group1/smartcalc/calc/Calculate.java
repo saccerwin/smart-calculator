@@ -20,6 +20,7 @@ public class Calculate {
     	return (Character) null;
     }
 
+	//thu
 	//ham xet do uu tien 
 	private byte priority(char x){
 		if ('0'<=x && x<='9') return 1;
