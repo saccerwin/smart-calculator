@@ -8,6 +8,9 @@
 package com.group1.smartcalc;
 
 public final class R {
+    public static final class array {
+        public static final int Tenbieudo=0x7f050000;
+    }
     public static final class attr {
     }
     public static final class drawable {
@@ -26,52 +29,69 @@ public final class R {
         public static final int stackview1=0x7f02000c;
     }
     public static final class id {
-        public static final int a=0x7f060005;
-        public static final int about=0x7f06000f;
-        public static final int b=0x7f060006;
-        public static final int btnClear=0x7f060003;
-        public static final int c=0x7f060007;
-        public static final int calc=0x7f06000a;
-        public static final int chart=0x7f06000c;
-        public static final int converter=0x7f06000e;
-        public static final int d=0x7f060008;
-        public static final int draw=0x7f060009;
-        public static final int equation=0x7f06000d;
-        public static final int graph=0x7f06000b;
-        public static final int grdButtons=0x7f060004;
-        public static final int hehe=0x7f060000;
-        public static final int help=0x7f060010;
-        public static final int txtInput=0x7f060002;
-        public static final int txtResult=0x7f060001;
+        public static final int Giatridoituong1=0x7f070001;
+        public static final int Tendoituong1=0x7f070000;
+        public static final int Them=0x7f070015;
+        public static final int Ve=0x7f070016;
+        public static final int a=0x7f070002;
+        public static final int about=0x7f07001c;
+        public static final int b=0x7f070003;
+        public static final int btnClear=0x7f07000b;
+        public static final int c=0x7f070004;
+        public static final int calc=0x7f070017;
+        public static final int chart=0x7f070019;
+        public static final int converter=0x7f07001b;
+        public static final int d=0x7f07000d;
+        public static final int doituong=0x7f070014;
+        public static final int draw=0x7f07000e;
+        public static final int equation=0x7f07001a;
+        public static final int giatrihoanh=0x7f070013;
+        public static final int giatritung=0x7f070011;
+        public static final int graph=0x7f070018;
+        public static final int grdButtons=0x7f07000c;
+        public static final int hehe=0x7f070008;
+        public static final int help=0x7f07001d;
+        public static final int hien=0x7f070007;
+        public static final int nhaplai=0x7f070006;
+        public static final int spiner=0x7f07000f;
+        public static final int t1=0x7f070010;
+        public static final int t2=0x7f070012;
+        public static final int tinh=0x7f070005;
+        public static final int txtInput=0x7f07000a;
+        public static final int txtResult=0x7f070009;
     }
     public static final class layout {
         public static final int aboutus=0x7f030000;
-        public static final int helplayout=0x7f030001;
-        public static final int main=0x7f030002;
-        public static final int splashscreen=0x7f030003;
-        public static final int testdraw=0x7f030004;
+        public static final int doituonglistview=0x7f030001;
+        public static final int equation=0x7f030002;
+        public static final int helplayout=0x7f030003;
+        public static final int main=0x7f030004;
+        public static final int splashscreen=0x7f030005;
+        public static final int testdraw=0x7f030006;
+        public static final int vedothi=0x7f030007;
     }
     public static final class menu {
-        public static final int main_menu=0x7f050000;
+        public static final int main_menu=0x7f060000;
     }
     public static final class string {
-        public static final int app_name=0x7f040001;
-        public static final int copyright=0x7f040002;
-        public static final int cuong_name=0x7f040008;
-        public static final int cuong_telephone=0x7f040009;
-        public static final int dieu_name=0x7f04000a;
-        public static final int dieu_school=0x7f04000b;
-        public static final int dieu_telephone=0x7f04000c;
-        public static final int duong_name=0x7f040005;
-        public static final int duong_telephone=0x7f040007;
-        public static final int hello=0x7f040000;
-        public static final int help_text=0x7f040003;
-        public static final int link_text=0x7f040004;
-        public static final int long_name=0x7f04000f;
-        public static final int long_telephone=0x7f040010;
-        public static final int school=0x7f040006;
-        public static final int sqrt_sign=0x7f040011;
-        public static final int vuong_name=0x7f04000d;
-        public static final int vuong_telephone=0x7f04000e;
+        public static final int app_name=0x7f040002;
+        public static final int copyright=0x7f040003;
+        public static final int cuong_name=0x7f040009;
+        public static final int cuong_telephone=0x7f04000a;
+        public static final int dieu_name=0x7f04000b;
+        public static final int dieu_school=0x7f04000c;
+        public static final int dieu_telephone=0x7f04000d;
+        public static final int duong_name=0x7f040006;
+        public static final int duong_telephone=0x7f040008;
+        public static final int hello=0x7f040001;
+        public static final int help_text=0x7f040004;
+        public static final int link_text=0x7f040005;
+        public static final int long_name=0x7f040010;
+        public static final int long_telephone=0x7f040011;
+        public static final int planet_prompt_title=0x7f040000;
+        public static final int school=0x7f040007;
+        public static final int sqrt_sign=0x7f040012;
+        public static final int vuong_name=0x7f04000e;
+        public static final int vuong_telephone=0x7f04000f;
     }
 }
