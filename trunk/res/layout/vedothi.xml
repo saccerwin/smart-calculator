@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Spinner 
+        android:id="@+id/spiner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+	<TableLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <TableRow >        
+	        <TextView 
+	            android:id="@+id/t1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Gia tri lon nhat truc tung"
+	            android:textSize="12dp"
+	            android:enabled="true"/>
+	        <EditText 
+	            android:id="@+id/giatritung"
+	            android:layout_width="200dp"
+	            android:layout_height="wrap_content"
+	            android:enabled="true">
+	            
+	        </EditText>
+	    </TableRow>
+	      <TableRow>        
+	          <TextView
+	            android:id="@+id/t2" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Gia tri lon nhat truc hoanh"
+	            android:textSize="12dp"
+	            android:enabled="true"/>
+	        <EditText 
+	            android:id="@+id/giatrihoanh"
+	            android:layout_width="200dp"
+	            android:layout_height="wrap_content"
+	             android:enabled="true">
+	            
+	        </EditText>
+	    </TableRow>
+	    <TableRow >
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Doi tuong"
+	            android:textSize="12dp">	            
+	        </TextView>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Ten doi tuong"
+	            android:textSize="12dp">	            
+	        </TextView>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Gia tri doi tuong"
+	            android:textSize="12dp">	            
+	        </TextView>
+	      </TableRow>
+	   </TableLayout>
+
+	   <ListView
+	       android:id="@+id/doituong"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content" >
+</ListView>
+	    
+	       <Button
+	           android:id="@+id/Them"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:text="Them"
+	       ></Button> 
+	       <Button
+	           android:id="@+id/Ve"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:text="Ve"
+	       ></Button>
+	          
+</LinearLayout>

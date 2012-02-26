@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="planet_prompt_title">Loai ve</string>
+    <string-array  name="Tenbieudo">
+        <item >Ve bieu do cot</item>
+        <item >Ve bieu do duong</item>
+        <item >Ve bieu do mien</item>
+        <item >Ve bieu do tron</item>
+</string-array>
+    
+</resources>
