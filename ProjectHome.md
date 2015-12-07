@@ -1,0 +1,1 @@
+Được làm với mục đích học hỏi, để hiểu sâu hơn về Android
